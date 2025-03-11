@@ -1,8 +1,8 @@
-import { useState, useEffect, FC } from 'react';
+import { useState, useEffect, FC, JSX } from 'react';
 import { FaEnvelope, FaGithub, FaLinkedin, FaPython, FaReact, FaDatabase, FaBrain } from 'react-icons/fa';
 
 
-// Define types for our data
+
 interface UserInfo {
   main: {
     title: string;
@@ -202,7 +202,7 @@ const Footer: FC = () => {
 const Homepage: FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
-  // Inline data based on the CV provided
+ 
   const INFO: UserInfo = {
     main: {
       title: "Manish Gyawali - Machine Learning Engineer & Frontend Developer",
@@ -356,7 +356,7 @@ const Homepage: FC = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [scrolled]);
 
   return (
     <div className="min-h-screen bg-gray-50">
