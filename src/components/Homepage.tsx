@@ -1,8 +1,7 @@
-import React, { useState, useEffect, FC } from 'react';
+import { useState, useEffect, FC } from 'react';
 import { FaEnvelope, FaGithub, FaLinkedin, FaPython, FaReact, FaDatabase, FaBrain } from 'react-icons/fa';
-import { SiPytorch, SiTensorflow, SiScikitlearn, SiJavascript, SiCplusplus, SiMysql, SiFigma } from 'react-icons/si';
 
-// Define types for our data
+
 interface UserInfo {
   main: {
     title: string;
@@ -48,7 +47,7 @@ interface EducationData {
 interface SkillCategory {
   category: string;
   skills: string[];
-  icon: JSX.Element;
+  icon: Element;
 }
 
 const Navbar: FC = () => {
@@ -200,9 +199,8 @@ const Footer: FC = () => {
 };
 
 const Homepage: FC = () => {
-  const [scrolled, setScrolled] = useState(false);
 
-  // Inline data based on the CV provided
+ 
   const INFO: UserInfo = {
     main: {
       title: "Manish Gyawali - Machine Learning Engineer & Frontend Developer",
@@ -536,7 +534,7 @@ const Homepage: FC = () => {
               <div>
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Get In Touch</h3>
                 <p className="text-gray-600 mb-6">
-                  I'm currently looking for new opportunities, and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                  Always looking for new opportunities to grow myself, and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center">
