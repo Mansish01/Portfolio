@@ -379,9 +379,11 @@ const Homepage: FC = () => {
               <a href="#projects" className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300 text-center">
                 View Projects
               </a>
-              <a href={INFO.socials.email} className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded-lg transition duration-300 text-center">
-                Contact Me
-              </a>
+              <a href="/assets/docs/CV_Manish_G.pdf" download>
+                    <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded-lg transition duration-300 text-center">
+                        Download CV
+                    </button>
+                </a>
             </div>
             <div className="flex items-center text-gray-600 mb-2">
               <FaEnvelope className="mr-2" />
@@ -400,6 +402,7 @@ const Homepage: FC = () => {
               </svg>
               <span>{INFO.main.location}</span>
             </div>
+
           </div>
           <div className="md:col-span-2">
             <div className="bg-white p-1 rounded-lg shadow-md">
